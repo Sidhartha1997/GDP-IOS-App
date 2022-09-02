@@ -6,12 +6,21 @@
 //
 
 import UIKit
+import SwiftUI
 
 class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    struct HomeViewController: View {
+        var body: some View {
+            Image("App_Logo")
+                .resizable()
+                .scaledToFit()
+        }
     }
 
     @IBAction func Login(_ sender: UIButton) {
