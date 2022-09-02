@@ -11,6 +11,7 @@ class ForgotPasswordViewController: UIViewController {
     
     @IBOutlet weak var EmailIdTextField: UITextField!
     
+    
     @IBOutlet weak var newPasswordTextField: UITextField!
     
     
