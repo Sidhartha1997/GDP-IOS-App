@@ -6,3 +6,5 @@ programmatically search for map-based addresses  https://developer.apple.com/doc
 
 
 Reference for Saving History Data  https://www.raywenderlich.com/books/swiftui-apprentice/v1.0/chapters/9-saving-history-data
+
+Reference for validations:  https://gist.github.com/nelglez/dd9af3e1c60b09a2d4ddb88c51c7a6a9
