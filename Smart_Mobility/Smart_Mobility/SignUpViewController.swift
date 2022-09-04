@@ -44,5 +44,6 @@ class SignUpViewController: UIViewController {
     */
 
     @IBAction func SignUp(_ sender: UIButton) {
+        
     }
 }
