@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
@@ -44,6 +46,19 @@ class SignUpViewController: UIViewController {
     */
 
     @IBAction func SignUp(_ sender: UIButton) {
-        
+        let email = EmailIdTextField.text!
+        let password = confirmPasswordTextField.text!
+        Auth.auth().createUser(withEmail: email, password: password){authResult, error in
+            if(error != nil){
+                let alert = UIAlertController(title: "Alert", message: "Entered Invalid Details!", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+            else{
+                let alert = UIAlertController(title: "Alert", message: "User Registered Successfully!", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
     }
 }
