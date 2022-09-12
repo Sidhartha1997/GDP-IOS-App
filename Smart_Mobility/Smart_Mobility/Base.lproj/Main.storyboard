@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939.13043478260875" y="69.642857142857139"/>
+            <point key="canvasLocation" x="-172" y="70"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="lN5-8z-y51">
@@ -123,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZp-Td-Gy6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1908.6956521739132" y="809.59821428571422"/>
+            <point key="canvasLocation" x="1064" y="785"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="JqB-VR-qiU">
@@ -240,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ird-pk-Sbv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1908.6956521739132" y="69.642857142857139"/>
+            <point key="canvasLocation" x="1064" y="70"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qWl-Tf-ddQ">
@@ -258,7 +259,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rsi-jz-ADz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+            <point key="canvasLocation" x="-1294" y="70"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="a4h-g8-v1U">
@@ -315,7 +316,7 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Login" cornerStyle="large"/>
                                 <connections>
                                     <action selector="LoginButtonClicked:" destination="ukR-eE-3R7" eventType="editingChanged" id="8kg-xg-rgf"/>
-                                    <segue destination="I78-LO-GLM" kind="show" id="f2N-Lh-84I"/>
+                                    <segue destination="lTh-LZ-YPd" kind="show" id="Mrc-jl-fSk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -330,34 +331,126 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CSt-i4-WZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937.68115942028987" y="809.59821428571422"/>
+            <point key="canvasLocation" x="-172" y="785"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="u9A-Gy-pJs">
+            <objects>
+                <viewController id="ibT-9N-G3E" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AfM-aG-GZr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nBk-cD-eVD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="2bi-ut-Jek">
+                        <imageReference key="image" image="gearshape.fill" catalog="system" symbolScale="medium" renderingMode="original"/>
+                        <imageReference key="selectedImage" image="gearshape.fill" catalog="system" symbolScale="medium" renderingMode="original"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gge-9l-g0B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1794" y="2389"/>
         </scene>
         <!--Dashboard View Controller-->
-        <scene sceneID="Y2k-UF-KDF">
+        <scene sceneID="q9j-M5-IIo">
             <objects>
-                <viewController id="I78-LO-GLM" customClass="DashboardViewController" customModule="Smart_Mobility" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="k7B-qN-TUK">
+                <viewController id="E3i-qo-kur" customClass="DashboardViewController" customModule="Smart_Mobility" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lmb-Kg-LvP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4n-md-DVT">
-                                <rect key="frame" x="82" y="185" width="251" height="87"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFe-5r-ZPs">
+                                <rect key="frame" x="82" y="153" width="251" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Rent a Bike" cornerStyle="capsule"/>
                                 <connections>
-                                    <segue destination="Tq8-Nq-u7B" kind="show" identifier="rentABikeSegue" id="KCK-ub-BE0"/>
+                                    <segue destination="Tq8-Nq-u7B" kind="show" identifier="rentABikeSegue" id="3bA-Tm-wjV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOm-4N-rZN">
+                                <rect key="frame" x="82" y="364" width="251" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="View Location Points" cornerStyle="capsule"/>
+                                <connections>
+                                    <segue destination="tFf-NK-zLB" kind="show" id="rlw-Sv-hw7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkl-Hg-yHb">
+                                <rect key="frame" x="82" y="574" width="251" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Ride History" cornerStyle="capsule"/>
+                                <connections>
+                                    <segue destination="KsA-83-Kme" kind="show" id="bNX-XS-L87"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="kVv-4l-ytg"/>
+                        <viewLayoutGuide key="safeArea" id="zYX-vG-mI2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lKh-2Q-Ifl"/>
+                    <tabBarItem key="tabBarItem" title="" id="pMs-ej-Bh0">
+                        <imageReference key="image" image="homekit" catalog="system" symbolScale="medium" renderingMode="original"/>
+                        <imageReference key="selectedImage" image="house" catalog="system" symbolScale="medium" renderingMode="original"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="qpA-d4-Je1"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Arf-Yo-eZa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5u-HM-7aN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937.68115942028987" y="1512.7232142857142"/>
+            <point key="canvasLocation" x="-172" y="1509"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="idq-6L-iHa">
+            <objects>
+                <viewController id="KsA-83-Kme" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mKb-V8-1ie">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Tig-4o-4Tg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EFt-bw-yoN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z6e-bs-ayS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2101" y="1509"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ev6-Zw-uzE">
+            <objects>
+                <viewController id="tFf-NK-zLB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aXP-yk-WsX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Dew-k0-VIi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lch-Bj-BRR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bE6-Lk-77i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1106" y="1971"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="N4J-Uv-X1o">
+            <objects>
+                <tabBarController id="lTh-LZ-YPd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="a4s-6X-HQm"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3NR-gK-QN3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="E3i-qo-kur" kind="relationship" relationship="viewControllers" id="dXQ-gk-PEC"/>
+                        <segue destination="ibT-9N-G3E" kind="relationship" relationship="viewControllers" id="Rfy-CK-NlG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1C3-zx-DMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1793" y="1509"/>
         </scene>
         <!--RentA Bike View Controller-->
         <scene sceneID="gu0-bC-d5Z">
@@ -405,13 +498,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayZ-eo-fsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1908.6956521739132" y="1512.7232142857142"/>
+            <point key="canvasLocation" x="-172" y="2248"/>
         </scene>
     </scenes>
     <resources>
         <image name="App_Logo" width="1024" height="623"/>
         <image name="Login_Logo" width="1063" height="958"/>
         <image name="Signup_Logo" width="861" height="1091"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="qrcode" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
