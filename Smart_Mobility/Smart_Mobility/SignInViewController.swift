@@ -45,10 +45,10 @@ class SignInViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
             
-            print("login")
+//            print("login")
         }
         else{ Auth.auth().signIn(withEmail: email, password: password){user, error in
-            if (error != nil) && (user != nil) {
+            if (error == nil) && (user == nil) {
                 let alert = UIAlertController(title: "Alert", message: "User Logined Successfully!", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                 self.present(alert, animated: true, completion: nil)
