@@ -54,8 +54,8 @@ class SignUpViewController: UIViewController {
         let lastName = LastNameTextField.text!
         let phoneNumber = PhoneNumberTextField.text!
         
-        if email == "" || password == "" {
-            let alert = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle: .alert)
+        if email == "" || password == "" || firstName == "" || lastName == "" || phoneNumber == "" {
+            let alert = UIAlertController(title: "Error", message: "Please enter valid details!", preferredStyle: .alert)
             
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
@@ -74,13 +74,16 @@ class SignUpViewController: UIViewController {
                                     ]
                     var ref: DatabaseReference!
 //                    ref = Database.database().reference().root
-//                    ref.child("users").child((authData?.uid)! as! String).setValue(userData)
+//                    ref.child("users").child((authData?.user.uid)!).setValue(userData)
                     
-                    ref = Database.database().reference(withPath: "smartmobility/users").child("user")
+                    ref = Database.database().reference(withPath: "smartmobility/users").child("user").child((authData?.user.uid)!)
                     ref.setValue(userData)
-
+                    
+                    // Switch To Dashboard Page
+//                    performSegue(withIdentifier: "dashboard", sender: self)
                 }
                 else{
+                    print(error!)
                     let alert = UIAlertController(title: "Alert", message: "Entered Invalid Details!", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                     self.present(alert, animated: true, completion: nil)

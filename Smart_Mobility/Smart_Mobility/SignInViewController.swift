@@ -34,21 +34,25 @@ class SignInViewController: UIViewController {
      }
      */
     
-    @IBAction func LoginButtonClicked(_ sender: Any) {
+    @IBAction func LoginButtonClicked(_ sender: UIButton) {
         
         let email = userNameTextField.text!
         let password = passwordTextField.text!
-        if email == "" || password == ""{
+        
+        if email == "" || password == "" {
             //Alert to tell the user that there was an error because they didn't fill anything in the textfields because they didn't fill anything in
-            let alert = UIAlertController(title: "Error", message: "Please enter an email and password.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message: "Please enter email and password!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            
+            print("login")
         }
         else{ Auth.auth().signIn(withEmail: email, password: password){user, error in
-            if(error == nil){
+            if (error != nil) && (user != nil) {
                 let alert = UIAlertController(title: "Alert", message: "User Logined Successfully!", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                 self.present(alert, animated: true, completion: nil)
+                
             }
             else{
                 let alert = UIAlertController(title: "Alert", message: "Entered Invalid Details!", preferredStyle: .alert)
@@ -57,6 +61,6 @@ class SignInViewController: UIViewController {
             }
         }
         }
-        }
     }
-    
+}
+
