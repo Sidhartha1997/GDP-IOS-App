@@ -7,11 +7,12 @@
 
 import UIKit
 
-struct SettingsPage {
+class Settings{
     var settingsName : String?
-//    init(setName: String){
-//        self.settingsName = "setName"
-//    }
+    
+    init(setName: String){
+        self.settingsName = setName
+    }
 }
 
 class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -27,7 +28,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         //Create a cell with a cell name and the index path
         let cell = TableViewOutlet.dequeueReusableCell(withIdentifier: "sectionCell", for: indexPath)
         //Assign the data into the cell
-        cell.textLabel?.text = settingsArray[indexPath.row].SettingsName
+        cell.textLabel?.text = settingsArray[indexPath.row].settingsName
         return cell
    }
     
@@ -40,28 +41,28 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = "Settings"
+//        self.title = "Settings"
         //Assign the number of rows
         TableViewOutlet.delegate = self
         //Assign the datasource
         TableViewOutlet.dataSource = self
         
-        let s1 = Settings(SetName: "MacBookAir")
+        let s1 = Settings(setName: "MacBookAir")
         settingsArray.append(s1)
 
-        let s2 = Settings(SetName: "iPhone")
+        let s2 = Settings(setName: "iPhone")
         settingsArray.append(s2)
 
-        let s3 = Settings(SetName: "iPad")
+        let s3 = Settings(setName: "iPad")
         settingsArray.append(s3)
 
 }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let transition = segue.identifier
         if transition == "SettingsDescription"{
-            let destination = segue.destination as!  ResultViewController
+            let destination = segue.destination as!  SettingsResultViewController
             //Assigning product to the destination
-            destination.Settings = settingsArray[(TableViewOutlet.indexPathForSelectedRow?.row)!]
+            destination.settings = settingsArray[(TableViewOutlet.indexPathForSelectedRow?.row)!]
         }
     }
 
