@@ -445,7 +445,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5u-HM-7aN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-172" y="2312"/>
+            <point key="canvasLocation" x="-172" y="2289"/>
         </scene>
         <!--Ride History View Controller-->
         <scene sceneID="idq-6L-iHa">

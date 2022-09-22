@@ -47,15 +47,24 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         //Assign the datasource
         TableViewOutlet.dataSource = self
         
-        let s1 = Settings(setName: "MacBookAir")
+        let s1 = Settings(setName: "Account Settings")
         settingsArray.append(s1)
 
-        let s2 = Settings(setName: "iPhone")
+        let s2 = Settings(setName: "Notifications")
         settingsArray.append(s2)
 
-        let s3 = Settings(setName: "iPad")
+        let s3 = Settings(setName: "Wallet")
         settingsArray.append(s3)
 
+        let s4 = Settings(setName: "Need Help")
+        settingsArray.append(s4)
+        
+        let s5 = Settings(setName: "Report")
+        settingsArray.append(s5)
+        
+        let s6 = Settings(setName: "Refer")
+        settingsArray.append(s6)
+        
 }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let transition = segue.identifier

@@ -18,10 +18,11 @@ class SettingsResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        displayLabel.text = "The Settings \((settings?.settingsName)!)"
+        displayLabel.text = "\((settings?.settingsName)!)"
         
         // Do any additional setup after loading the view.
     }
+    
     
     
     /*
