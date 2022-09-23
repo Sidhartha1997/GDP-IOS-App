@@ -13,15 +13,15 @@ class SettingsResultViewController: UIViewController {
     
     @IBOutlet weak var displayLabel: UILabel!
     
-    var settings : Settings?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        displayLabel.text = "\((settings?.settingsName)!)"
-        
-        // Do any additional setup after loading the view.
-    }
+//    var settings : Settings?
+//    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        
+//        displayLabel.text = "\((settings?.settingsName)!)"
+//        
+//        // Do any additional setup after loading the view.
+//    }
     
     
     
