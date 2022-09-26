@@ -614,10 +614,6 @@
                                     <segue destination="Tq8-Nq-u7B" kind="show" identifier="rentABikeSegue" id="3bA-Tm-wjV"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homebackground" translatesAutoresizingMaskIntoConstraints="NO" id="saE-jH-wvt">
-                                <rect key="frame" x="0.0" y="85" width="414" height="725"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOm-4N-rZN">
                                 <rect key="frame" x="82" y="364" width="251" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -636,6 +632,10 @@
                                     <segue destination="KsA-83-Kme" kind="show" id="bNX-XS-L87"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homebackground" translatesAutoresizingMaskIntoConstraints="NO" id="saE-jH-wvt">
+                                <rect key="frame" x="30" y="248" width="364" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zYX-vG-mI2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -648,7 +648,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5u-HM-7aN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-172" y="2289"/>
+            <point key="canvasLocation" x="-172.46376811594203" y="2288.8392857142858"/>
         </scene>
         <!--Ride History View Controller-->
         <scene sceneID="idq-6L-iHa">
