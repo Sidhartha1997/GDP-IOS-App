@@ -12,18 +12,18 @@ import SwiftUI
 class DashboardViewController: UIViewController {
 
     
-    var body: some View {
-        GeometryReader { geo in
-            ZStack{
-            Image("homebackground")
-                .resizable()
-                .scaledToFit()
-                .edgesIgnoringSafeArea(.all)
-                .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
-                .opacity(1.0)
-            }
-        }
-    }
+//    var body: some View {
+//        GeometryReader { geo in
+//            ZStack{
+//            Image("homebackground")
+//                .resizable()
+//                .scaledToFit()
+//                .edgesIgnoringSafeArea(.all)
+//                .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
+//                .opacity(1.0)
+//            }
+//        }
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
