@@ -8,22 +8,22 @@
 import UIKit
 
 class ForgotPasswordViewController: UIViewController {
-    
+
     @IBOutlet weak var EmailIdTextField: UITextField!
-    
-    
+
+
     @IBOutlet weak var newPasswordTextField: UITextField!
-    
-    
+
+
     @IBOutlet weak var confirmNewPassword: UITextField!
-    
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation
@@ -37,5 +37,5 @@ class ForgotPasswordViewController: UIViewController {
 
     @IBAction func forgetPasswordClicked(_ sender: Any) {
     }
-    
+
 }

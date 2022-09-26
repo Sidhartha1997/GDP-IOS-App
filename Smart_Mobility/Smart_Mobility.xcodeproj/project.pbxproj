@@ -18,8 +18,6 @@
 		24DA61A6283C3DD0004BE551 /* Smart_MobilityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA61A5283C3DD0004BE551 /* Smart_MobilityUITestsLaunchTests.swift */; };
 		24DA61B3283C42F1004BE551 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA61B2283C42F1004BE551 /* ForgotPasswordViewController.swift */; };
 		24DA61B7283C4369004BE551 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA61B6283C4369004BE551 /* SignUpViewController.swift */; };
-		9E281C5128C90DA000BD5AAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E281C5028C90DA000BD5AAE /* ViewController.swift */; };
-		9E281C5328C90DF700BD5AAE /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E281C5228C90DF700BD5AAE /* DescriptionViewController.swift */; };
 		9E281C5628C90FBB00BD5AAE /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9E281C5528C90FBB00BD5AAE /* FirebaseAnalytics */; };
 		9E281C5828C90FBB00BD5AAE /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 9E281C5728C90FBB00BD5AAE /* FirebaseAnalyticsOnDeviceConversion */; };
 		9E281C5A28C90FBB00BD5AAE /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9E281C5928C90FBB00BD5AAE /* FirebaseAnalyticsSwift */; };
@@ -47,7 +45,12 @@
 		9E281C8628C90FBB00BD5AAE /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9E281C8528C90FBB00BD5AAE /* FirebaseRemoteConfigSwift */; };
 		9E281C8828C90FBB00BD5AAE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9E281C8728C90FBB00BD5AAE /* FirebaseStorage */; };
 		9E281C8A28C90FBB00BD5AAE /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 9E281C8928C90FBB00BD5AAE /* FirebaseStorageCombine-Community */; };
+		9E281C8E28D142A000BD5AAE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E281C8D28D142A000BD5AAE /* SettingsViewController.swift */; };
+		9E54101E28DBEC6600590E2C /* LocationPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54101D28DBEC6600590E2C /* LocationPointsViewController.swift */; };
+		9E54102028DBEC8C00590E2C /* RideHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54101F28DBEC8C00590E2C /* RideHistoryViewController.swift */; };
+		9E54102228DBED2000590E2C /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54102128DBED2000590E2C /* PersonalInfoViewController.swift */; };
 		9E5B5FAD28C552F6003B937C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E5B5FAC28C552F6003B937C /* GoogleService-Info.plist */; };
+		9E919C2828D3917800498281 /* SettingsResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E919C2728D3917800498281 /* SettingsResultViewController.swift */; };
 		B1CE459D283D35300047EA35 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE459C283D35300047EA35 /* SignInViewController.swift */; };
 		B1CE459F283D38450047EA35 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE459E283D38450047EA35 /* DashboardViewController.swift */; };
 		B1CE45A1283D3D690047EA35 /* RentABikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE45A0283D3D690047EA35 /* RentABikeViewController.swift */; };
@@ -86,9 +89,12 @@
 		24DA61A5283C3DD0004BE551 /* Smart_MobilityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_MobilityUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		24DA61B2283C42F1004BE551 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		24DA61B6283C4369004BE551 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		9E281C5028C90DA000BD5AAE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9E281C5228C90DF700BD5AAE /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		9E281C8D28D142A000BD5AAE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9E54101D28DBEC6600590E2C /* LocationPointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPointsViewController.swift; sourceTree = "<group>"; };
+		9E54101F28DBEC8C00590E2C /* RideHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideHistoryViewController.swift; sourceTree = "<group>"; };
+		9E54102128DBED2000590E2C /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
 		9E5B5FAC28C552F6003B937C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9E919C2728D3917800498281 /* SettingsResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsResultViewController.swift; sourceTree = "<group>"; };
 		B1CE459C283D35300047EA35 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		B1CE459E283D38450047EA35 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		B1CE45A0283D3D690047EA35 /* RentABikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentABikeViewController.swift; sourceTree = "<group>"; };
@@ -169,14 +175,15 @@
 		24DA6181283C3DCE004BE551 /* Smart_Mobility */ = {
 			isa = PBXGroup;
 			children = (
-				9E281C5028C90DA000BD5AAE /* ViewController.swift */,
-				9E281C5228C90DF700BD5AAE /* DescriptionViewController.swift */,
 				24DA6182283C3DCE004BE551 /* AppDelegate.swift */,
 				24DA6184283C3DCE004BE551 /* SceneDelegate.swift */,
 				24DA6186283C3DCE004BE551 /* HomeViewController.swift */,
 				B1CE459C283D35300047EA35 /* SignInViewController.swift */,
 				24DA61B6283C4369004BE551 /* SignUpViewController.swift */,
 				24DA6188283C3DCE004BE551 /* Main.storyboard */,
+				9E54102128DBED2000590E2C /* PersonalInfoViewController.swift */,
+				9E54101F28DBEC8C00590E2C /* RideHistoryViewController.swift */,
+				9E54101D28DBEC6600590E2C /* LocationPointsViewController.swift */,
 				B1CE45A0283D3D690047EA35 /* RentABikeViewController.swift */,
 				B1CE459E283D38450047EA35 /* DashboardViewController.swift */,
 				24DA618B283C3DCF004BE551 /* Assets.xcassets */,
@@ -184,6 +191,8 @@
 				24DA6190283C3DCF004BE551 /* Info.plist */,
 				9E5B5FAC28C552F6003B937C /* GoogleService-Info.plist */,
 				24DA61B2283C42F1004BE551 /* ForgotPasswordViewController.swift */,
+				9E281C8D28D142A000BD5AAE /* SettingsViewController.swift */,
+				9E919C2728D3917800498281 /* SettingsResultViewController.swift */,
 			);
 			path = Smart_Mobility;
 			sourceTree = "<group>";
@@ -371,15 +380,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				24DA61B3283C42F1004BE551 /* ForgotPasswordViewController.swift in Sources */,
+				9E54101E28DBEC6600590E2C /* LocationPointsViewController.swift in Sources */,
 				B1CE459F283D38450047EA35 /* DashboardViewController.swift in Sources */,
+				9E54102028DBEC8C00590E2C /* RideHistoryViewController.swift in Sources */,
 				24DA6187283C3DCE004BE551 /* HomeViewController.swift in Sources */,
-				9E281C5328C90DF700BD5AAE /* DescriptionViewController.swift in Sources */,
-				9E281C5128C90DA000BD5AAE /* ViewController.swift in Sources */,
+				9E281C8E28D142A000BD5AAE /* SettingsViewController.swift in Sources */,
 				B1CE459D283D35300047EA35 /* SignInViewController.swift in Sources */,
 				B1CE45A1283D3D690047EA35 /* RentABikeViewController.swift in Sources */,
+				9E54102228DBED2000590E2C /* PersonalInfoViewController.swift in Sources */,
 				24DA6183283C3DCE004BE551 /* AppDelegate.swift in Sources */,
 				24DA6185283C3DCE004BE551 /* SceneDelegate.swift in Sources */,
 				24DA61B7283C4369004BE551 /* SignUpViewController.swift in Sources */,
+				9E919C2828D3917800498281 /* SettingsResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

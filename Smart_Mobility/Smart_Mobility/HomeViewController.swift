@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     
     struct HomeViewController: View {
         var body: some View {
-            Image("App_Logo")
+            Image("app_logo")
                 .resizable()
                 .scaledToFit()
         }
