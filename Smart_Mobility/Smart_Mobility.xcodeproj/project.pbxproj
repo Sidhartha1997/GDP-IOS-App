@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2486BFF928E380A9000F776C /* StartRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486BFF828E380A8000F776C /* StartRideViewController.swift */; };
 		24DA6183283C3DCE004BE551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA6182283C3DCE004BE551 /* AppDelegate.swift */; };
 		24DA6185283C3DCE004BE551 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA6184283C3DCE004BE551 /* SceneDelegate.swift */; };
 		24DA6187283C3DCE004BE551 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA6186283C3DCE004BE551 /* HomeViewController.swift */; };
@@ -74,6 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2486BFF828E380A8000F776C /* StartRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRideViewController.swift; sourceTree = "<group>"; };
 		24DA617F283C3DCE004BE551 /* Smart_Mobility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smart_Mobility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DA6182283C3DCE004BE551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24DA6184283C3DCE004BE551 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				24DA61B2283C42F1004BE551 /* ForgotPasswordViewController.swift */,
 				9E281C8D28D142A000BD5AAE /* SettingsViewController.swift */,
 				9E919C2728D3917800498281 /* SettingsResultViewController.swift */,
+				2486BFF828E380A8000F776C /* StartRideViewController.swift */,
 			);
 			path = Smart_Mobility;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				9E54102228DBED2000590E2C /* PersonalInfoViewController.swift in Sources */,
 				24DA6183283C3DCE004BE551 /* AppDelegate.swift in Sources */,
 				24DA6185283C3DCE004BE551 /* SceneDelegate.swift in Sources */,
+				2486BFF928E380A9000F776C /* StartRideViewController.swift in Sources */,
 				24DA61B7283C4369004BE551 /* SignUpViewController.swift in Sources */,
 				9E919C2828D3917800498281 /* SettingsResultViewController.swift in Sources */,
 			);
