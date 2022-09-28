@@ -1323,21 +1323,6 @@
             </objects>
             <point key="canvasLocation" x="-4945" y="3873"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Nep-Jh-0rR">
-            <objects>
-                <viewController id="Dhg-eF-CO4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DMr-p9-sXX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="fbd-dy-ED4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kSP-rw-oMv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2916" y="4282"/>
-        </scene>
     </scenes>
     <resources>
         <image name="App_Logo" width="1024" height="623"/>
