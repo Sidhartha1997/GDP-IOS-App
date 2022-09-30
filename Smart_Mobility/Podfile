@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Smart_Mobility' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Smart_Mobility
+
+  target 'Smart_MobilityTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Smart_MobilityUITests' do
+    # Pods for testing
+  end
+
+  use_frameworks!
+
+  # Pods for BaseProject
+  pod 'Firebase/Analytics'
+  
+  # Firebase Authentication SDK
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+
+  
+
+end

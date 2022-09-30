@@ -73,10 +73,9 @@ class SignUpViewController: UIViewController {
                                     "password": password
                                     ]
                     var ref: DatabaseReference!
-//                    ref = Database.database().reference().root
-//                    ref.child("users").child((authData?.user.uid)!).setValue(userData)
+
                     
-                    ref = Database.database().reference(withPath: "smartmobility/users").child("user").child((authData?.user.uid)!)
+                    ref = Database.database().reference(withPath: "smartmobility").child("user").child((authData?.user.uid)!)
                     ref.setValue(userData)
                     
                     // Switch To Dashboard Page
