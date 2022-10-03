@@ -6,10 +6,10 @@
 //
 
 import UIKit
-import FirebaseCore
-import FirebaseFirestore
 import Firebase
 import FirebaseAuth
+import FirebaseCore
+import FirebaseFirestore
 
 class SignUpViewController: UIViewController {
     
@@ -54,14 +54,14 @@ class SignUpViewController: UIViewController {
         let lastName = LastNameTextField.text!
         let phoneNumber = PhoneNumberTextField.text!
         
-        if email == "" || password == "" || firstName == "" || lastName == "" || phoneNumber == "" {
+        if email.isEmpty == true || password.isEmpty == true || firstName.isEmpty == true || lastName.isEmpty == true || phoneNumber.isEmpty == true {
             let alert = UIAlertController(title: "Error", message: "Please enter valid details!", preferredStyle: .alert)
-            
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
             
         } else {
-            Auth.auth().createUser(withEmail: email, password: password, completion:{ authData, error  in
+            //            Auth.auth().createUser(withEmail: email, password: password, completion:{ authData, error  in
+            Auth.auth().createUser(withEmail: email, password: password) { authData, error in
                 if(error == nil){
                     let alert = UIAlertController(title: "Alert", message: "User Registered Successfully!", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
@@ -71,15 +71,21 @@ class SignUpViewController: UIViewController {
                                     "phonenumber" : phoneNumber,
                                     "email":email,
                                     "password": password
-                                    ]
+                    ]
                     var ref: DatabaseReference!
+<<<<<<< Updated upstream
 
+=======
+                    //                    ref = Database.database().reference().root
+                    //                    ref.child("users").child((authData?.user.uid)!).setValue(userData)
+>>>>>>> Stashed changes
                     
                     ref = Database.database().reference(withPath: "smartmobility").child("user").child((authData?.user.uid)!)
                     ref.setValue(userData)
                     
+                    self.sendVerificationMail()
                     // Switch To Dashboard Page
-//                    performSegue(withIdentifier: "dashboard", sender: self)
+                    //                    performSegue(withIdentifier: "dashboard", sender: self)
                 }
                 else{
                     print(error!)
@@ -87,9 +93,29 @@ class SignUpViewController: UIViewController {
                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }
-            })
+            }
         }
     }
     
     
+    private var authUser : User? {
+        return Auth.auth().currentUser
+    }
+
+    public func sendVerificationMail() {
+        if self.authUser != nil && !self.authUser!.isEmailVerified {
+            self.authUser!.sendEmailVerification(completion: { (error) in
+                // Notify the user that the mail has sent or couldn't because of an error.
+                let alert = UIAlertController(title: "Alert", message: "Please Verify the email id!", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            })
+        }
+        else {
+            // Either the user is not available, or the user is already verified.
+            let alert = UIAlertController(title: "Alert", message: "Email is already verified or Email is not avaiable!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
 }

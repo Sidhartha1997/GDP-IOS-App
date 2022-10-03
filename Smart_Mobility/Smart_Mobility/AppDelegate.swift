@@ -7,9 +7,9 @@
 
 import UIKit
 import Firebase
-import FirebaseAuth
-import FirebaseCore
-import FirebaseFirestore
+//import FirebaseAuth
+//import FirebaseCore
+//import FirebaseFirestore
 
 @main
 

@@ -2,12 +2,14 @@
 //  SignInViewController.swift
 //  Smart_Mobility
 //
-//  Created by Kondr Jitendra Chowdary on 5/24/22.
+//  Created by Eppalapelli,Satheesh on 5/24/22.
 //
 
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseCore
+import FirebaseFirestore
 
 class SignInViewController: UIViewController {
     
@@ -39,7 +41,7 @@ class SignInViewController: UIViewController {
         let email = userNameTextField.text!
         let password = passwordTextField.text!
         
-        if email == "" || password == "" {
+        if email.isEmpty == true || password.isEmpty == true {
             //Alert to tell the user that there was an error because they didn't fill anything in the textfields because they didn't fill anything in
             let alert = UIAlertController(title: "Error", message: "Please enter email and password!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
@@ -47,12 +49,21 @@ class SignInViewController: UIViewController {
             
             //            print("login")
         }
+<<<<<<< Updated upstream
         else { Auth.auth().signIn(withEmail: email, password: password){authResult, error in
             if (error == nil) && (authResult == nil) {
+=======
+        else{ Auth.auth().signIn(withEmail: email, password: password){ [weak self] authResult, error in
+            guard let strongSelf = self else {return}
+            
+            if let authResult = authResult {
+                let user = authResult.user
+>>>>>>> Stashed changes
                 let alert = UIAlertController(title: "Alert", message: "User Logined Successfully!", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                self.present(alert, animated: true, completion: nil)
+                self?.present(alert, animated: true, completion: nil)
                 
+<<<<<<< Updated upstream
                 if let error = error as? NSError {
                     switch AuthErrorCode.Code(rawValue: error as! Int) {
                     case.operationNotAllowed:
@@ -81,15 +92,68 @@ class SignInViewController: UIViewController {
                     let email = userInfo?.email
                 }
                 
+=======
+                if user.isEmailVerified {
+                    self?.performSegue(withIdentifier: "dashboardSegue", sender: nil)
+                }
+                if user != nil && !user.isEmailVerified {
+                    // User is available, but their email is not verified.
+                    // Let the user know by an alert, preferably with an option to re-send the verification mail.
+                    self!.sendVerificationMail()
+                }
+>>>>>>> Stashed changes
             }
             else{
                 let alert = UIAlertController(title: "Alert", message: "Entered Invalid Details!", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                self.present(alert, animated: true, completion: nil)
+                self?.present(alert, animated: true, completion: nil)
+                
             }
         }
         }
     }
     
+<<<<<<< Updated upstream
+=======
+    private var authUser : User? {
+        return Auth.auth().currentUser
+    }
+    
+    public func sendVerificationMail() {
+        if self.authUser != nil && !self.authUser!.isEmailVerified {
+            self.authUser!.sendEmailVerification(completion: { (error) in
+                // Notify the user that the mail has sent or couldn't because of an error.
+                let alert = UIAlertController(title: "Alert", message: "Please Verify the email id!", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            })
+        }
+        else {
+            // Either the user is not available, or the user is already verified.
+            let alert = UIAlertController(title: "Alert", message: "Email is already verified or Email is not avaiable!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+>>>>>>> Stashed changes
 }
+
+
+//            guard let strongSelf = self else {return}
+//            if (error != nil) {
+//                let alert = UIAlertController(title: "Alert", message: "User Logined Successfully!", preferredStyle: .alert)
+//                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+//                self.present(alert, animated: true, completion: nil)
+////                Auth.auth().currentUser != nil {
+////                    let alert = UIAlertController(title: "Alert", message: Auth.auth().currentUser?.uid , preferredStyle: .alert)
+////                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+////                    self.present(alert, animated: true, completion: nil)
+////                    }
+////
+//            }
+//            else{
+//                let alert = UIAlertController(title: "Alert", message: "Entered Invalid Details!", preferredStyle: .alert)
+//                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+//                self.present(alert, animated: true, completion: nil)
+//            }
 
