@@ -8,22 +8,12 @@
 
 import UIKit
 import SwiftUI
+import Firebase
+import FirebaseAuth
+import FirebaseCore
+import FirebaseFirestore
 
 class DashboardViewController: UIViewController {
-
-    
-//    var body: some View {
-//        GeometryReader { geo in
-//            ZStack{
-//            Image("homebackground")
-//                .resizable()
-//                .scaledToFit()
-//                .edgesIgnoringSafeArea(.all)
-//                .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
-//                .opacity(1.0)
-//            }
-//        }
-//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,5 +31,32 @@ class DashboardViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    @IBAction func signOutPressed(_ sender: Any) {
+        let user = Auth.auth().currentUser
+        
+        if user != nil {
+            do {
+                try Auth.auth().signOut()
+                // Switch To Login Page
+                // Transition to the home screen
+                self.transitionToHome()
+            } catch let error as NSError {
+                let alert = UIAlertController(title: "Alert", message: (error as! String), preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    
+    func transitionToHome() {
+        
+        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        
+        view.window?.rootViewController = homeViewController
+        view.window?.makeKeyAndVisible()
+        
+    }
 }

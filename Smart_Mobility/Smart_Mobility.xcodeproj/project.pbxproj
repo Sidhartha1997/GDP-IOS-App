@@ -18,6 +18,13 @@
 		24DA61A6283C3DD0004BE551 /* Smart_MobilityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA61A5283C3DD0004BE551 /* Smart_MobilityUITestsLaunchTests.swift */; };
 		24DA61B3283C42F1004BE551 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA61B2283C42F1004BE551 /* ForgotPasswordViewController.swift */; };
 		24DA61B7283C4369004BE551 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA61B6283C4369004BE551 /* SignUpViewController.swift */; };
+		9E20966B28F1EDF7002D6EC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20966A28F1EDF7002D6EC8 /* Constants.swift */; };
+		9E20966D28F1F13F002D6EC8 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20966C28F1F13F002D6EC8 /* NotificationsViewController.swift */; };
+		9E20966F28F1F163002D6EC8 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20966E28F1F163002D6EC8 /* WalletViewController.swift */; };
+		9E20967128F1F1BC002D6EC8 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20967028F1F1BC002D6EC8 /* HelpViewController.swift */; };
+		9E20967328F1F1EC002D6EC8 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20967228F1F1EC002D6EC8 /* ReportViewController.swift */; };
+		9E20967528F1F22E002D6EC8 /* ReferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20967428F1F22E002D6EC8 /* ReferViewController.swift */; };
+		9E20967728F1F2F9002D6EC8 /* StartRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20967628F1F2F9002D6EC8 /* StartRideViewController.swift */; };
 		9E281C8E28D142A000BD5AAE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E281C8D28D142A000BD5AAE /* SettingsViewController.swift */; };
 		9E54101E28DBEC6600590E2C /* LocationPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54101D28DBEC6600590E2C /* LocationPointsViewController.swift */; };
 		9E54102028DBEC8C00590E2C /* RideHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54101F28DBEC8C00590E2C /* RideHistoryViewController.swift */; };
@@ -89,6 +96,13 @@
 		24DA61A5283C3DD0004BE551 /* Smart_MobilityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_MobilityUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		24DA61B2283C42F1004BE551 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		24DA61B6283C4369004BE551 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9E20966A28F1EDF7002D6EC8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9E20966C28F1F13F002D6EC8 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		9E20966E28F1F163002D6EC8 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		9E20967028F1F1BC002D6EC8 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		9E20967228F1F1EC002D6EC8 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		9E20967428F1F22E002D6EC8 /* ReferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferViewController.swift; sourceTree = "<group>"; };
+		9E20967628F1F2F9002D6EC8 /* StartRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRideViewController.swift; sourceTree = "<group>"; };
 		9E281C8D28D142A000BD5AAE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9E54101D28DBEC6600590E2C /* LocationPointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPointsViewController.swift; sourceTree = "<group>"; };
 		9E54101F28DBEC8C00590E2C /* RideHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideHistoryViewController.swift; sourceTree = "<group>"; };
@@ -180,7 +194,14 @@
 				24DA6186283C3DCE004BE551 /* HomeViewController.swift */,
 				B1CE459C283D35300047EA35 /* SignInViewController.swift */,
 				24DA61B6283C4369004BE551 /* SignUpViewController.swift */,
+				9E20966A28F1EDF7002D6EC8 /* Constants.swift */,
 				24DA6188283C3DCE004BE551 /* Main.storyboard */,
+				9E20967628F1F2F9002D6EC8 /* StartRideViewController.swift */,
+				9E20967428F1F22E002D6EC8 /* ReferViewController.swift */,
+				9E20967228F1F1EC002D6EC8 /* ReportViewController.swift */,
+				9E20967028F1F1BC002D6EC8 /* HelpViewController.swift */,
+				9E20966E28F1F163002D6EC8 /* WalletViewController.swift */,
+				9E20966C28F1F13F002D6EC8 /* NotificationsViewController.swift */,
 				9E54102128DBED2000590E2C /* PersonalInfoViewController.swift */,
 				9E54101F28DBEC8C00590E2C /* RideHistoryViewController.swift */,
 				9E54101D28DBEC6600590E2C /* LocationPointsViewController.swift */,
@@ -380,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E20966D28F1F13F002D6EC8 /* NotificationsViewController.swift in Sources */,
 				24DA61B3283C42F1004BE551 /* ForgotPasswordViewController.swift in Sources */,
 				9E54101E28DBEC6600590E2C /* LocationPointsViewController.swift in Sources */,
 				B1CE459F283D38450047EA35 /* DashboardViewController.swift in Sources */,
@@ -388,9 +410,15 @@
 				9E281C8E28D142A000BD5AAE /* SettingsViewController.swift in Sources */,
 				B1CE459D283D35300047EA35 /* SignInViewController.swift in Sources */,
 				B1CE45A1283D3D690047EA35 /* RentABikeViewController.swift in Sources */,
+				9E20967728F1F2F9002D6EC8 /* StartRideViewController.swift in Sources */,
 				9E54102228DBED2000590E2C /* PersonalInfoViewController.swift in Sources */,
 				24DA6183283C3DCE004BE551 /* AppDelegate.swift in Sources */,
+				9E20967128F1F1BC002D6EC8 /* HelpViewController.swift in Sources */,
 				24DA6185283C3DCE004BE551 /* SceneDelegate.swift in Sources */,
+				9E20966B28F1EDF7002D6EC8 /* Constants.swift in Sources */,
+				9E20967528F1F22E002D6EC8 /* ReferViewController.swift in Sources */,
+				9E20967328F1F1EC002D6EC8 /* ReportViewController.swift in Sources */,
+				9E20966F28F1F163002D6EC8 /* WalletViewController.swift in Sources */,
 				24DA61B7283C4369004BE551 /* SignUpViewController.swift in Sources */,
 				9E919C2828D3917800498281 /* SettingsResultViewController.swift in Sources */,
 			);
