@@ -15,6 +15,15 @@ import FirebaseFirestore
 
 class DashboardViewController: UIViewController {
     
+    
+    @IBOutlet weak var rentABikeButtonPressed: UIButton!
+    
+    @IBOutlet weak var viewLocationPoints: UIButton!
+    
+    @IBOutlet weak var rideHistory: UIButton!
+    
+    @IBOutlet weak var logOutButtonPressed: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,16 +41,21 @@ class DashboardViewController: UIViewController {
     }
     */
     
-    
-    @IBAction func signOutPressed(_ sender: Any) {
+    @IBAction func logOutButtonPressed(_ sender: UIButton) {
+        
         let user = Auth.auth().currentUser
         
         if user != nil {
             do {
                 try Auth.auth().signOut()
+                let alert = UIAlertController(title: "Alert", message: "\(String(describing: user?.email))" , preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
                 // Switch To Login Page
                 // Transition to the home screen
                 self.transitionToHome()
+                
             } catch let error as NSError {
                 let alert = UIAlertController(title: "Alert", message: (error as! String), preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))

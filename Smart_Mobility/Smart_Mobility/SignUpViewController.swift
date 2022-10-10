@@ -111,7 +111,7 @@ class SignUpViewController: UIViewController {
                                     "password": password
                     ]
                     var ref: DatabaseReference!
-                    ref = Database.database().reference(withPath: "smartmobility").child("user").child((authData?.user.uid)!)
+                    ref = Database.database().reference(withPath: "smartmobility").child("users").child((authData?.user.uid)!)
                     ref.setValue(userData)
                     
                     let alert = UIAlertController(title: "Alert", message: "User Registered Successfully!", preferredStyle: .alert)
@@ -120,7 +120,7 @@ class SignUpViewController: UIViewController {
                     
                     let db = Firestore.firestore()
                     
-                    db.collection("users").addDocument(data: ["firstname": firstName,
+                    db.collection("smartmobility/users").addDocument(data: ["firstname": firstName,
                                                               "lastname" : lastName,
                                                               "phonenumber" : phoneNumber,
                                                               "email":email,

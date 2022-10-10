@@ -55,7 +55,7 @@ class SignInViewController: UIViewController {
                 
                 if let authResult = authResult {
                     let user = authResult.user
-                    let alert = UIAlertController(title: "Alert", message: "User Logined Successfully! \(user)" , preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Alert", message: "User Logined Successfully! \(user.email)" , preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                     self?.present(alert, animated: true, completion: nil)
                     
