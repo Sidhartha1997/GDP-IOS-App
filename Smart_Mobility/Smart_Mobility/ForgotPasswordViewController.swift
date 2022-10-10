@@ -50,8 +50,19 @@ class ForgotPasswordViewController: UIViewController {
                 let resetEmailSentAlert = UIAlertController(title: "Reset email sent successfully", message: "Check your email", preferredStyle: .alert)
                 resetEmailSentAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 self.present(resetEmailSentAlert, animated: true, completion: nil)
+                
+                self.transitionToHome()
             }
         })
+    }
+    
+    func transitionToHome() {
+        
+        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        
+        view.window?.rootViewController = homeViewController
+        view.window?.makeKeyAndVisible()
+        
     }
 }
 

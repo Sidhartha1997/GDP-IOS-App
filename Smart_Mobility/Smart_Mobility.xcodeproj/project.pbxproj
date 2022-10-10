@@ -25,13 +25,14 @@
 		9E20967328F1F1EC002D6EC8 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20967228F1F1EC002D6EC8 /* ReportViewController.swift */; };
 		9E20967528F1F22E002D6EC8 /* ReferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20967428F1F22E002D6EC8 /* ReferViewController.swift */; };
 		9E281C8E28D142A000BD5AAE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E281C8D28D142A000BD5AAE /* SettingsViewController.swift */; };
+		9E40E50E28F3F03400C64CA4 /* QRData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E40E50D28F3F03400C64CA4 /* QRData.swift */; };
+		9E40E51028F3F34800C64CA4 /* RentABikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E40E50F28F3F34800C64CA4 /* RentABikeView.swift */; };
 		9E54101E28DBEC6600590E2C /* LocationPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54101D28DBEC6600590E2C /* LocationPointsViewController.swift */; };
 		9E54102028DBEC8C00590E2C /* RideHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54101F28DBEC8C00590E2C /* RideHistoryViewController.swift */; };
 		9E54102228DBED2000590E2C /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54102128DBED2000590E2C /* PersonalInfoViewController.swift */; };
 		9E5B5FAD28C552F6003B937C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E5B5FAC28C552F6003B937C /* GoogleService-Info.plist */; };
 		9E5F6E9A28F390E70000F297 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 9E5F6E9928F390E70000F297 /* Mixpanel */; };
 		9E5F6E9D28F3920A0000F297 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 9E5F6E9C28F3920A0000F297 /* Mixpanel */; };
-		9E5F6EB728F39C3C0000F297 /* DarkScannerLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5F6EB628F39C3C0000F297 /* DarkScannerLayerView.swift */; };
 		9E919C2828D3917800498281 /* SettingsResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E919C2728D3917800498281 /* SettingsResultViewController.swift */; };
 		9EDBB30A28EA885A00DF822D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9EDBB30928EA885A00DF822D /* FirebaseAnalytics */; };
 		9EDBB30C28EA885A00DF822D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 9EDBB30B28EA885A00DF822D /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -105,11 +106,12 @@
 		9E20967228F1F1EC002D6EC8 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		9E20967428F1F22E002D6EC8 /* ReferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferViewController.swift; sourceTree = "<group>"; };
 		9E281C8D28D142A000BD5AAE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9E40E50D28F3F03400C64CA4 /* QRData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRData.swift; sourceTree = "<group>"; };
+		9E40E50F28F3F34800C64CA4 /* RentABikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentABikeView.swift; sourceTree = "<group>"; };
 		9E54101D28DBEC6600590E2C /* LocationPointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPointsViewController.swift; sourceTree = "<group>"; };
 		9E54101F28DBEC8C00590E2C /* RideHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideHistoryViewController.swift; sourceTree = "<group>"; };
 		9E54102128DBED2000590E2C /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
 		9E5B5FAC28C552F6003B937C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9E5F6EB628F39C3C0000F297 /* DarkScannerLayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkScannerLayerView.swift; sourceTree = "<group>"; };
 		9E919C2728D3917800498281 /* SettingsResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsResultViewController.swift; sourceTree = "<group>"; };
 		B1CE459C283D35300047EA35 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		B1CE459E283D38450047EA35 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -201,15 +203,16 @@
 				9E20966A28F1EDF7002D6EC8 /* Constants.swift */,
 				24DA6188283C3DCE004BE551 /* Main.storyboard */,
 				9E20967428F1F22E002D6EC8 /* ReferViewController.swift */,
+				9E40E50D28F3F03400C64CA4 /* QRData.swift */,
 				9E20967228F1F1EC002D6EC8 /* ReportViewController.swift */,
 				9E20967028F1F1BC002D6EC8 /* HelpViewController.swift */,
 				9E20966E28F1F163002D6EC8 /* WalletViewController.swift */,
+				9E40E50F28F3F34800C64CA4 /* RentABikeView.swift */,
 				9E20966C28F1F13F002D6EC8 /* NotificationsViewController.swift */,
 				9E54102128DBED2000590E2C /* PersonalInfoViewController.swift */,
 				9E54101F28DBEC8C00590E2C /* RideHistoryViewController.swift */,
 				9E54101D28DBEC6600590E2C /* LocationPointsViewController.swift */,
 				B1CE45A0283D3D690047EA35 /* RentABikeViewController.swift */,
-				9E5F6EB628F39C3C0000F297 /* DarkScannerLayerView.swift */,
 				B1CE459E283D38450047EA35 /* DashboardViewController.swift */,
 				24DA618B283C3DCF004BE551 /* Assets.xcassets */,
 				24DA618D283C3DCF004BE551 /* LaunchScreen.storyboard */,
@@ -411,8 +414,10 @@
 			files = (
 				9E20966D28F1F13F002D6EC8 /* NotificationsViewController.swift in Sources */,
 				24DA61B3283C42F1004BE551 /* ForgotPasswordViewController.swift in Sources */,
+				9E40E51028F3F34800C64CA4 /* RentABikeView.swift in Sources */,
 				9E54101E28DBEC6600590E2C /* LocationPointsViewController.swift in Sources */,
 				B1CE459F283D38450047EA35 /* DashboardViewController.swift in Sources */,
+				9E40E50E28F3F03400C64CA4 /* QRData.swift in Sources */,
 				9E54102028DBEC8C00590E2C /* RideHistoryViewController.swift in Sources */,
 				24DA6187283C3DCE004BE551 /* HomeViewController.swift in Sources */,
 				9E281C8E28D142A000BD5AAE /* SettingsViewController.swift in Sources */,
@@ -423,7 +428,6 @@
 				9E20967128F1F1BC002D6EC8 /* HelpViewController.swift in Sources */,
 				24DA6185283C3DCE004BE551 /* SceneDelegate.swift in Sources */,
 				9E20966B28F1EDF7002D6EC8 /* Constants.swift in Sources */,
-				9E5F6EB728F39C3C0000F297 /* DarkScannerLayerView.swift in Sources */,
 				9E20967528F1F22E002D6EC8 /* ReferViewController.swift in Sources */,
 				9E20967328F1F1EC002D6EC8 /* ReportViewController.swift in Sources */,
 				9E20966F28F1F163002D6EC8 /* WalletViewController.swift in Sources */,
